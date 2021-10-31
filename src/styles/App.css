@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.content {
+	border: 1px solid white;
+	font-family: "Roboto", sans-serif;
+	margin: 10px auto;
+	max-width: 1440px;
+	background: #ffffff;
+	box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.12);
+	border-radius: 16px;
+}
+.wrapper {
+	margin: 100px 100px;
+}
+.header__title {
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 66px;
+	color: #2e282c;
+}
+
+.header__searchParam {
+	margin-top: 50px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 33px;
+	display: flex;
+}
+.header__searchParam select {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 33px;
+	border: 1px solid #444444;
+	border-radius: 6px;
+	width: 200px;
+	height: 50px;
+}
+.header__searchParam select {
+	padding-left: 20px;
+}
+.header__chooseBar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 200px;
+	align-items: center;
+	margin-left: 20px;
+}
+.header__chooseBar:first-child {
+	margin: 0;
+}
+
+.header__chooseText {
+	margin-right: 20px;
+}
+
+.cardsBox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media (max-width: 1402px) {
+	.content {
+		max-width: 800px;
+		margin: 10px auto;
+	}
+}
+
+@media (max-width: 800px) {
+	.header__title {
+		font-size: 24px;
+	}
+	.content {
+		margin: 0px;
+	}
+}
+
+@media (max-width: 621px) {
+	.header__searchParam {
+		flex-direction: column;
+	}
+	.header__chooseBar:last-child {
+		margin: 20px 0 0 0;
+	}
+	.wrapper {
+		margin: 30px;
+	}
+	.content {
+		margin: 0px;
+	}
+}
+
+@media (max-width: 320px) {
+	.wrapper {
+		margin: 10px;
+	}
+	.content {
+		margin: 0px;
+	}
+}
